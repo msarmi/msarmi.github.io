@@ -7,7 +7,7 @@ angular.module('myApp', ['angular-table'])
 		vm.loadProducts = function() {
 			var httpRequest = $http({
 				method: 'GET',
-				url: 'https://github.com/msarmi/msarmi.github.io.git/clean_table_big.json',
+				url: '/clean_table_big.json',
 				data: ''
 			}).success(function(data, status) {
 				vm.products = data;
